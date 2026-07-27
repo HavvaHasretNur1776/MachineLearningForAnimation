@@ -1,5 +1,5 @@
 # Modeling 3D Kinematics with Gaussian Process Regression
-This toy project explores the use of Gaussian Process Regression (GPR) via GPflow to model and predict the physical trajectory of an object in different physical environment to be 3D animated in Houdini.
+This toy project explores the use of Gaussian Process Regression (GPR) via GPflow to model and predict the physical trajectory of an object in different physical environments to be 3D animated in Houdini.
 
 ## Into the Unknown Force
 This project reconstructs a particle's trajectory from noisy spatial coordinates under the influence of an unknown force using Gaussian Process Regression (GPR) and visualizes the inferred kinetic anomaly using procedural vector fields in SideFX Houdini.
