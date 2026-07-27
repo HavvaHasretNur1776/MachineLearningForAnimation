@@ -1,6 +1,15 @@
 # Modeling 3D Kinematics with Gaussian Process Regression
-This toy project explores the use of Gaussian Process Regression (GPR) via GPflow to model and predict the physical trajectory of a bouncing ball for 3D animation in Houdini.
-## The Approach
+This toy project explores the use of Gaussian Process Regression (GPR) via GPflow to model and predict the physical trajectory of an object in different physical environment to be 3D animated in Houdini.
+
+## Into the Unknown Force
+
+<img width="721" height="480" alt="unknown_force_v2" src="https://github.com/user-attachments/assets/c14e76b7-1eb5-4ca1-9818-644e5eb99d28" />
+
+
+
+
+
+## Bouncing Ball
 Modelling a bouncing ball presents a small challenge because the system exists in two contradictory physical regimes:
 
 - Airborne Flight: Governed by gravity, forming a perfectly smooth, infinitely differentiable quadratic curve.Ground 
@@ -13,7 +22,7 @@ To solve this, the model leverages a Custom Mean Function. Instead of relying on
 - The Mean Function handles the strict deterministic laws of physics, ensuring perfect gravitational parabolas and sharp kinematic rebounds at the $Y=0$ boundary.
 - The Kernel (Squared Exponential) is relegated entirely to modeling the stochastic noise or residuals in the positional data.
 
-### Why GPR for 3D Motion and Kinematics?
+## Why GPR for 3D Motion and Kinematics?
 Gaussian Processes offer powerful advantages for 3D animation and spatial tracking:
 
 - Handling Sensor Noise: When working with raw motion capture data or noisy spatial tracking sensors, GPR excels at separating random noise from the true trajectory without destroying the underlying kinematics.
