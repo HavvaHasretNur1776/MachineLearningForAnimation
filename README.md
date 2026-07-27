@@ -7,12 +7,13 @@ This project reconstructs a particle's trajectory from noisy spatial coordinates
 Instead of assuming a parametric physical model for the unknown force $f(t)$, we go with complete model-agnostic appriach and, we place a zero-mean Gaussian Process prior on it:
 - $f(t) \sim \mathcal{GP}(0, k_f(t, t'))$
 Because acceleration is the second derivative of position ($\ddot{x}(t) = f(t)$), we do not need to compute the force explicitly. Instead, we apply a double linear operator to the covariance function to model the spatial position $x(t)$ directly:
-- $k_x(t, t') = \int_0^t \int_0^{t'} k_f(u, v) \,du \,dv$This allows the model to agnostically infer trajectory disruptions and 95% confidence intervals entirely from observational data, without knowing the underlying physics of the anomaly.
+- $k_x(t, t') = \int_0^t \int_0^{t'} k_f(u, v) \,du \,dv$
+This allows the model to agnostically infer trajectory disruptions and 95% confidence intervals entirely from observational data, without knowing the underlying physics of the anomaly.
 
-<img width="1101" height="581" alt="Screenshot 2026-07-27 at 15 12 27" src="https://github.com/user-attachments/assets/41f26daf-130f-449d-8f8c-3d17fbe0b3e9" />
+<img width="600" height="400" alt="Screenshot 2026-07-27 at 15 12 27" src="https://github.com/user-attachments/assets/41f26daf-130f-449d-8f8c-3d17fbe0b3e9" />
 
 
-<img width="721" height="480" alt="unknown_force_v2" src="https://github.com/user-attachments/assets/c14e76b7-1eb5-4ca1-9818-644e5eb99d28" />
+<img width="650" height="350" alt="unknown_force_v2" src="https://github.com/user-attachments/assets/c14e76b7-1eb5-4ca1-9818-644e5eb99d28" />
 
 
 
