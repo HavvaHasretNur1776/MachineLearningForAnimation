@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from scipy.spatial import Voronoi
 
 def generate_target_geometry(num_shards=60, seed=42):
     """
