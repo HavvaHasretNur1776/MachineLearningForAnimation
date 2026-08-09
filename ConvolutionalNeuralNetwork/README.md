@@ -16,3 +16,4 @@ The project demonstrates how machine learning can be leveraged as a highly paral
    - Physical Simulation: Reverses the time of the dynamic data, applying displacement vectors to a 3D geometry to simulate the shattered pieces going back in time for physical reformation of the original object.
    - Digital Twin Hologram: Constructs a real-time architectural wireframe representing the neural network's structural prediction.
    - Procedural Diagnostics: Utilizes custom VEX code to read the CNN's reconstruction_error and visually glitch the wireframe geometry in exact spatial zones where the model struggled with pattern recognition.
+<img width="800" height="449" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/7ff01fd0-92f2-4ba5-81bc-96b6b0b007ef" />
