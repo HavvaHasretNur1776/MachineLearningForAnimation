@@ -9,7 +9,7 @@ The project demonstrates how machine learning can be leveraged as a highly paral
 3. Temporal Machine Learning (TensorFlow / Keras)
     - Implements a 1D CNN to process the temporal kinematic data.
     - The network acts as an automated feature extractor, sliding across the time-series data $x_t$ to implicitly learn spatial derivatives like velocity and acceleration.
-    - Bypasses $O(N^3)$ complexity bottlenecks found in standard regressions by processing the simultaneous chaos of all tracking points in parallel.
+    - Bypasses the complexity bottlenecks found in standard regressions by processing the simultaneous chaos of all tracking points in parallel.
     - Outputs predicted Cartesian coordinates for the object's rest state and a normalized reconstruction_error metric representing the model's localized uncertainty.
 4. Procedural Visualization & Error Mapping (SideFX Houdini / VEX)
    - Ingests the static ML predictions and dynamic telemetry into a procedural node network.
